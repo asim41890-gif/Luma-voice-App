@@ -12,12 +12,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Unzip LumaApp Code
-        run: |
-          unzip LumaApp.zip
-          mv LumaApp/* .
-          rm -rf LumaApp LumaApp.zip
-
       - name: Create Gradle Wrapper
         run: gradle wrapper
 
